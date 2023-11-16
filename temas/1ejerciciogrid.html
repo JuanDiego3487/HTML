@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .contenedor {
+        text-align: center;
+
+        width: 30%;
+        height: 60vh;
+        display: grid;
+        gap: 10px;
+        background-color: white;
+        grid-template-areas:"uno dos dos"
+                            "tres dos dos"
+                            "tres cuatro cinco"
+                            "tres seis siete"
+                            "ocho ocho ocho";
+
+    }
+
+
+    .item1 {
+        grid-area: uno;
+        background-color: aqua;
+    }
+    .item2 {
+        grid-area: dos;
+        background-color: aqua;
+    }
+    .item3 {
+        grid-area: tres;
+        background-color: aqua;
+    }
+    .item4 {
+        grid-area: cuatro;
+        background-color: aqua;
+    }
+    .item5 {
+        grid-area: cinco;
+        background-color: aqua;
+    }
+    .item6 {
+        grid-area: seis;
+        background-color: aqua;
+    }
+    .item7 {
+        grid-area: siete;
+        background-color: aqua;
+    }
+    .item8 {
+        grid-area: ocho;
+        background-color: aqua;
+    }
+
+</style>
+<body>
+    <div class="contenedor">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+    </div>
+</body>
+
+</html>
