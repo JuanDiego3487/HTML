@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagenes con Css</title>
+
+    <style>
+        body{
+            background-image: url("fondo.jpg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            height: 900px;
+            background-attachment: fixed;
+            background-size: cover;
+
+            display: grid;
+            box-sizing: border-box;
+            grid-template-rows: repeat(12, 1fr);
+            grid-template-columns: repeat(12, 1fr);
+            font-weight: bolder;
+            gap: 5px;
+        }
+
+        @media (max-width: 480px) {
+            .menu {
+                grid-row: 1 /  2;
+                grid-column: 1 / 2;
+            }
+
+            .domicilio {
+                grid-row: 2 / span 3;
+                grid-column: 1 / 2;
+            }
+            .reservar {
+                grid-row: 3 /  4;
+                grid-column: 1 / 2;
+            }
+            .comentario {
+                grid-row: 4 /  5;
+                grid-column: 1 / 2;
+            }
+        }
+
+        .vip {
+            display: flex;
+            justify-content: space-around;
+            width: 60%;
+            border-radius: 100px;
+            padding: 16px 32px;
+            margin: 10px 160px;
+            font-weight: bold;
+            align-items: center;
+        }
+
+
+        li {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 60%;
+            background-color: gray;
+            border-radius: 100px;
+            padding: 16px 32px;
+            margin: 10px 160px;
+            font-weight: bold;
+        }
+        .siguenos {
+            display: flex;
+            justify-content: space-around;
+            width: 60%;
+
+            border-radius: 100px;
+            padding: 16px 32px;
+            margin: 10px 160px;
+            font-weight: bold;
+        }
+        .redes {
+            display: flex;
+            justify-content: space-around;
+            border-radius: 100px;
+            padding: 16px 32px;
+            margin: 10px 160px;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+        <div class="background">
+            <div class="vip"><img src="vip.jpg" alt=""> </div>
+
+            <li class="menu">
+                <a href="http://127.0.0.1:5500/css/proyecto/MENU.html">¡VER NUESTRO MENU!</a>
+            </li>
+            <li class="domicilio">
+                <a href="">DOMICILIO</a>
+            </li>
+            <li class="reservar">
+                <a href="">RESERVAR</a>
+            </li>
+            <li class="comentario">
+                <a href="">¡DEJANOS TU COMENTARIO!</a>
+            </li>
+            <div class="siguenos">SIGUENOS</div>
+                <div class="redes"> <img src="whatsapp.png" width=50px><img src="facebook.png" width=50px><img src="instagramç.jpg" width="50px"></div>
+        </div>
+
+</body>
+</html>
